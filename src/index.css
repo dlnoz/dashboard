@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/assets/fonts/mulish-v17-latin-regular.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../src/assets/fonts/mulish-v17-latin-600.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../src/assets/fonts/mulish-v17-latin-700.woff2') format('woff2'); 
+}
+body{
+    font-family: "Mulish", sans-serif;
+}
+
+
+.containers{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 0;
+}
+
+.active{
+  background-color: rgba(159, 162, 180, 8%);
+  color: #DDE2FF;
+}
+
+.active::before{
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  background-color: #DDE2FF;
+  left: 0;
+  top: 0;
+}
+
+
+.header-wrapper{
+  max-width: 95%;
+}
+.pages-wrapper{
+  max-width: 95%;
+}
