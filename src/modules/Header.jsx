@@ -6,8 +6,8 @@ import { ProfilPhoto } from "../assets/images"
 const Header = () => {
     const {pathname} = useLocation()
     return (
-        <div className="header-wrapper flex justify-between containers !mt-[41px]">
-            <div className="capitalize">
+        <div className="header-wrapper  flex justify-between containers !mt-[41px]">
+            <div className="capitalize font-bold text-[24px] text-[##252733]">
                 {pathname == "/" ? "Overview" : pathname.split("/")[1]}
             </div>
             <div className="flex gap-[32px]">
@@ -17,7 +17,7 @@ const Header = () => {
                 </div>
                 <span className="w-[2px] h-[42px] bg-[#DFE0EB]"></span>
                 <div className="flex items-center gap-[16px]">
-                    <span>Jones Ferdinand</span>
+                    <span className="text-[14px] text-[#252733] font-semibold">Jones Ferdinand</span>
                     <div className="w-[44px] h-[44px] border-[#C5C7CD] border-[3px] p-[2px] rounded-full">
                         <img src={ProfilPhoto} alt="" />
                     </div>
